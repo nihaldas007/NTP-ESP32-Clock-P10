@@ -103,15 +103,15 @@ void loop()
     {
       
       display.clearDisplay();
-      display.drawLine(16, 0, 16, 15, myBlue); 
-      display.setTextColor(myBlue);
+      display.drawLine(16, 0, 16, 15, myGreen);
+      display.setTextColor(myRed);
       display.setCursor(4, 0);
       display.print(hourStr);
-      display.setTextColor(myGreen);
+      display.setTextColor(myRed);
       display.setCursor(4, 9);
       display.print(minStr);
 
-      display.setTextColor(myBlue);
+      display.setTextColor(myGreen);
       display.setCursor(18, y);
       display.print(prevSecStr);
       display.setCursor(18, y + 12);
@@ -133,15 +133,15 @@ void loop()
     for (int y = 8; y >= 4; y--)
     {
       display.clearDisplay();
-      display.drawLine(16, 0, 16, 15, myBlue); 
-      display.setTextColor(myBlue);
+      display.drawLine(16, 0, 16, 15, myGreen);
+      display.setTextColor(myRed);
       display.setCursor(4, 0);
       display.print(hourStr);
-      display.setTextColor(myGreen);
+      display.setTextColor(myRed);
       display.setCursor(4, 9);
       display.print(minStr);
 
-      display.setTextColor(myBlue);
+      display.setTextColor(myGreen);
       display.setCursor(18, 4);
       display.print(leftDigit);
 
