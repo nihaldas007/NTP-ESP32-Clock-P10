@@ -2,6 +2,7 @@
 #include <PxMatrix.h>
 #include <WiFi.h>
 #include "Clock_1.h"
+#include "Clock_2.h"
 
 #define P_LAT 26
 #define P_A 19
@@ -62,12 +63,13 @@ void setup()
   display.begin(4);
   display.setScanPattern(ZAGZIG);
   display.clearDisplay();
-  // display.setBrightness(200);
+  // display.setBrightness(0);
   display_update_enable(true);
 }
 
 void loop()
 {
-  showClock();
+  showClock_1();
+  // showClock_2();
 
 }

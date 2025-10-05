@@ -14,7 +14,7 @@ inline void display_text(int x, int y, const char *a, uint16_t color)
   display.setCursor(x, y);
   display.print(a);
 }
-inline void showClock()
+inline void showClock_1()
 {
   static int lastSec = -1;
   struct tm timeinfo;
